@@ -104,14 +104,14 @@ analytics:
 # Site Author
 author:
   name             : "Kripesh Shiwakoti"
-  avatar           : "/Users/alinaUpreti/Documents/Kripesh/KRIPESH_GAStudent.jpg"
+  avatar           : "./portfolio_images/KRIPESH_GAStudent.jpg"
   bio              : "Data Science Portfolio"
   location         : "Sydney, Australia"
   email            : "kripeshiwakoti@gmail.com"
   links:
-    - label: "Gmail"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: mailto:kripeshiwakoti@gmail.com
+      # url: mailto:kripeshiwakoti@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
