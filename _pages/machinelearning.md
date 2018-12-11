@@ -15,7 +15,31 @@ header:\
 \'97\'97\'97\
 \
 \pard\pardeftab720\partightenfactor0
-\cf0 \
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\{% include group-by-array collection=site.posts field="tags" %\}\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\{% for tag in group_names %\}\
+	\{% assign posts = group_items[forloop.index0] %\}\
+	<h2 id="\{\{ tag | slugify \}\}" class="archive__subtitle">\{\{ tag \}\}</h2>\
+\pard\pardeftab720\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 	
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\{% for post in posts %\}\
+		\{% include archive-single.html %\}\
+	\{% endfor %\}
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\{% endfor %\}
+\f0 \cf0 \kerning1\expnd0\expndtw0 \
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 \cf0 \
 
