@@ -1,12 +1,11 @@
 ---
 layout: archive
-permalink: /machine-learning/
-title: “Machine Learning Posts by Tags”
+permalink: /projects/
+title: “My Machine Learning projects”
 author_profile = true
-header:
-    image: “/images/KRIPESH_GAStudent.jpg”
 ---
 
+{% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
 
 {% for tag in group_names %}
