@@ -104,7 +104,7 @@ analytics:
 # Site Author
 author:
   name             : "Kripesh Shiwakoti"
-  avatar           : "./images/KRIPESH_GAStudent.jpg"
+  avatar           : "/images/KRIPESH_GAStudent.jpg"
   bio              : "Data Science Portfolio"
   location         : "Sydney, Australia"
   email            : "kripeshiwakoti@gmail.com"
